@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Banner from "../Banner/Banner";
 import SectionHeader from "../SectionHeader/SectionHeader";
 import JobCategoryContainer from "../JobCategoryContainer/JobCategoryContainer";
@@ -8,6 +8,7 @@ import JobsContainer from "../JobsContainer/JobsContainer";
 const Home = () => {
   const { categories, jobs } = useLoaderData();
   // console.log(categories);
+
   return (
     <div>
       <Banner></Banner>
