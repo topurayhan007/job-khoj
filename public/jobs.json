@@ -1,0 +1,111 @@
+[
+  {
+    "id": 1,
+    "companyLogo": "assets/images/Acme-corp.webp",
+    "jobTitle": "Software Engineer",
+    "companyName": "Acme Corporation",
+    "location": "San Francisco, CA",
+    "remoteOrOnsite": "Onsite",
+    "fulltimeOrParttime": "Full-time",
+    "salary": "120K - 150K",
+    "jobDescription": "We're looking for an experienced software engineer to join our team and help us build the next generation of our product. You'll be working with a talented and passionate group of engineers to design and develop scalable and performant software.",
+    "jobResponsibility": "Design and develop high-quality software using modern programming languages and frameworks. Collaborate with product managers, designers, and other stakeholders to gather requirements and define technical specifications. Write clean, maintainable, and well-documented code. Ensure code quality through testing and code reviews. Continuously improve our software development processes and practices.",
+    "educationalRequirements": "Bachelor's or Master's degree in Computer Science, Software Engineering, or a related field.",
+    "experiences": "5+ years of experience in software development.",
+    "contactInformation": {
+      "phone": "+1 (555) 123-4567",
+      "email": "jobs@acme.com"
+    }
+  },
+  {
+    "id": 2,
+    "companyLogo": "assets/images/netflix-4.png",
+    "jobTitle": "UX Designer",
+    "companyName": "Netflix, Inc.",
+    "location": "New York, NY",
+    "remoteOrOnsite": "Remote",
+    "fulltimeOrParttime": "Full-time",
+    "salary": "80K - 100K",
+    "jobDescription": "We're looking for a talented UX designer to join our growing team. You'll be responsible for designing and prototyping user interfaces for our web and mobile applications, and working closely with our product and engineering teams to ensure a seamless user experience.",
+    "jobResponsibility": "Create wireframes, mockups, and prototypes for web and mobile applications. Conduct user research and gather feedback to inform design decisions. Collaborate with product managers and engineers to define user requirements and technical specifications. Develop and maintain a design system to ensure consistency and scalability across our applications.",
+    "educationalRequirements": "Bachelor's or Master's degree in Interaction Design, Graphic Design, Human-Computer Interaction, or a related field.",
+    "experiences": "3+ years of experience in UX design for web and mobile applications.",
+    "contactInformation": {
+      "phone": "+1 (555) 234-5678",
+      "email": "jobs@netflix.com"
+    }
+  },
+  {
+    "id": 3,
+    "companyLogo": "assets/images/Group-10021.png",
+    "jobTitle": "Marketing Manager",
+    "companyName": "Airbnb, Inc.",
+    "location": "Los Angeles, CA",
+    "remoteOrOnsite": "Onsite",
+    "fulltimeOrParttime": "Full-time",
+    "salary": "100K - 130K",
+    "jobDescription": "We're seeking an experienced Marketing Manager to oversee our marketing campaigns and strategies. You'll be responsible for creating and executing campaigns that will drive growth and engagement across all channels.",
+    "jobResponsibility": "Develop and execute integrated marketing campaigns across various channels including email, social media, content, and events. Create and manage marketing budgets. Analyze and report on campaign effectiveness and ROI. Conduct market research to identify trends and opportunities. Collaborate with cross-functional teams including product, sales, and design to ensure cohesive messaging.",
+    "educationalRequirements": "Bachelor's or Master's degree in Marketing, Business Administration, or a related field.",
+    "experiences": "7+ years of experience in marketing, with a focus on B2B marketing.",
+    "contactInformation": {
+      "phone": "+1 (555) 345-6789",
+      "email": "jobs@airbnb.com"
+    }
+  },
+  {
+    "id": 4,
+    "companyLogo": "assets/images/google-1-1.png",
+    "jobTitle": "Data Analyst",
+    "companyName": "Google LLC",
+    "location": "Silicon Valley, CA",
+    "remoteOrOnsite": "Remote",
+    "fulltimeOrParttime": "Full-time",
+    "salary": "80K - 100K",
+    "jobDescription": "We're looking for a data analyst to help us make sense of our data and make data-driven decisions. You'll be responsible for analyzing and interpreting complex data sets, creating visualizations, and presenting insights to stakeholders.",
+    "jobResponsibility": "Collect, clean, and transform large and complex data sets. Analyze and interpret data to identify trends and insights. Create visualizations and dashboards to communicate data insights to stakeholders. Collaborate with cross-functional teams to develop data-driven solutions to business problems.",
+    "educationalRequirements": "Bachelor's or Master's degree in Data Science, Statistics, Mathematics, or a related field.",
+    "experiences": "3+ years of experience in data analysis or a related field.",
+    "contactInformation": {
+      "phone": "+1 (555) 456-7890",
+      "email": "jobs@google.com"
+    }
+  },
+  {
+    "id": 5,
+    "companyLogo": "assets/images/amazon.png",
+    "jobTitle": "Product Manager",
+    "companyName": "Amazon.com, Inc.",
+    "location": "Boston, MA",
+    "remoteOrOnsite": "Onsite",
+    "fulltimeOrParttime": "Full-time",
+    "salary": "110K - 130K",
+    "jobDescription": "We're looking for an experienced Product Manager to lead the development of new products and features. You'll be responsible for working with cross-functional teams to define requirements, develop roadmaps, and launch new products.",
+    "jobResponsibility": "Work with cross-functional teams to define product requirements and develop roadmaps. Conduct market and user research to identify opportunities and inform product decisions. Prioritize features and make trade-offs based on business impact and user needs. Collaborate with engineering, design, and other stakeholders to ensure successful product launches. Define and track key performance indicators to measure the success of products.",
+    "educationalRequirements": "Bachelor's or Master's degree in Business Administration, Computer Science, or a related field.",
+    "experiences": "5+ years of experience in product management, with a focus on B2B software products.",
+    "contactInformation": {
+      "phone": "+1 (555) 456-7890",
+      "email": "jobs@amazon.com"
+    }
+  },
+
+  {
+    "id": 6,
+    "companyLogo": "assets/images/tesla-9.png",
+    "jobTitle": "Sales Representative",
+    "companyName": "Tesla, Inc.",
+    "location": "Austin, TX",
+    "remoteOrOnsite": "Onsite",
+    "fulltimeOrParttime": "Full-time",
+    "salary": "60K - 80K",
+    "jobDescription": "We're looking for a motivated and results-driven Sales Representative to join our team. You'll be responsible for selling our products and services to new and existing customers, and building long-term relationships with them.",
+    "jobResponsibility": "Prospect and qualify new sales leads through a combination of outbound cold calling, email, and social selling. Conduct sales presentations and product demonstrations to potential customers. Negotiate contracts and pricing with customers. Build and maintain relationships with existing customers to ensure ongoing business. Meet or exceed monthly and quarterly sales targets.",
+    "educationalRequirements": "Bachelor's degree in Business Administration, Marketing, or a related field.",
+    "experiences": "3+ years of experience in B2B sales, with a proven track record of meeting or exceeding sales targets.",
+    "contactInformation": {
+      "phone": "+1 (555) 567-8901",
+      "email": "jobs@tesla.com"
+    }
+  }
+]
