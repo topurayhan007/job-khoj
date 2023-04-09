@@ -7,7 +7,7 @@ const JobsContainer = ({ jobs }) => {
 
   useEffect(() => {
     const lessJobs = jobs.slice(0, 4);
-    console.log(lessJobs);
+    // console.log(lessJobs);
     setFeatureJobs(lessJobs);
   }, []);
 

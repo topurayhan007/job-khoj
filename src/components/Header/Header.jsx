@@ -8,7 +8,12 @@ const Header = () => {
     <header className="bg-[#f9f9ff]">
       <nav className="flex justify-between items-center w-10/12 mx-auto pt-10">
         <div>
-          <h3 className="text-3xl text-[#1A1919] font-extrabold">JobKhoj</h3>
+          <h3 className="text-4xl text-[#1A1919] font-extrabold">
+            Job
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7E90FE] to-[#9873FF]">
+              Khoj
+            </span>
+          </h3>
         </div>
         <div className="flex gap-8 justify-center text-base font-bold">
           <ActiveLink to="/">Home</ActiveLink>
