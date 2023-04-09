@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Main from "./components/Layout/Main";
 import Home from "./components/Home/Home";
+import categoriesAndJobsLoader from "./loaders/categoriesAndJobsLoader";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+        loader: categoriesAndJobsLoader,
       },
     ],
   },

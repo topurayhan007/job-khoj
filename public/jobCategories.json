@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "image": "assets/icons/chip-1.png",
+    "name": "Engineering Jobs",
+    "num_jobs": 400
+  },
+  {
+    "id": 2,
+    "image": "assets/icons/accounts-1.png",
+    "name": "Sales",
+    "num_jobs": 150
+  },
+  {
+    "id": 3,
+    "image": "assets/icons/social-media-1.png",
+    "name": "Marketing",
+    "num_jobs": 190
+  },
+  {
+    "id": 4,
+    "image": "assets/icons/business-1.png",
+    "name": "Customer Service",
+    "num_jobs": 232
+  }
+]
