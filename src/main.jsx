@@ -4,16 +4,17 @@ import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Main from "./components/Layout/Main";
+import Home from "./components/Home/Home";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
     children: [
-      /* {
+      {
         path: "/",
-        element: <App></App>,
-      }, */
+        element: <Home></Home>,
+      },
     ],
   },
 ]);

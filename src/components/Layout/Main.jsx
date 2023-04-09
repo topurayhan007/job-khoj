@@ -6,7 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Main = () => {
   return (
-    <div className="w-10/12 mx-auto">
+    <div className="text-center">
       <Header></Header>
       <Outlet></Outlet>
       <ToastContainer />
