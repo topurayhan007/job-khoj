@@ -1,4 +1,5 @@
 import React from "react";
+import { addToDb } from "../../utilities/fakedb";
 
 const JobSummary = ({ job }) => {
   const {
@@ -16,7 +17,14 @@ const JobSummary = ({ job }) => {
     experiences,
     contactInformation,
   } = job;
+
   const { phone, email } = contactInformation;
+
+  const handleAddToDb = (id) => {
+    // console.log(id);
+    addToDb(id);
+  };
+
   return (
     <div className="">
       <div className="text-left p-8 bg-gradient-to-r from-[#f2f4ff] to-[#f5f1ff] rounded-lg">
@@ -64,7 +72,10 @@ const JobSummary = ({ job }) => {
           </p>
         </div>
       </div>
-      <button className="w-full mt-6 text-base text-white font-bold bg-gradient-to-r from-[#7E90FE] to-[#9873FF] rounded-lg px-6 py-4">
+      <button
+        onClick={() => handleAddToDb(id)}
+        className="w-full mt-6 text-base text-white font-bold bg-gradient-to-r from-[#7E90FE] to-[#9873FF] rounded-lg px-6 py-4"
+      >
         Apply Now
       </button>
     </div>
