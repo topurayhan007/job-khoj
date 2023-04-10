@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import PageHeader from "../PageHeader/PageHeader";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { getAppliedJobs } from "../../utilities/fakedb";
 import jobsLoader from "../../utilities/jobsLoader";
 import AppliedJob from "../AppliedJob/AppliedJob";
@@ -69,14 +69,19 @@ const AppliedJobs = () => {
           <div className="flex flex-col justify-end relative w-32">
             <button
               onClick={handleDropdownToggle}
-              className="rounded-lg bg-[#e8e9ee] px-5 py-4 font-bold cursor-pointer"
+              className="rounded-lg bg-slate-200 px-5 py-4 font-bold cursor-pointer"
             >
-              Filter By <FontAwesomeIcon icon={faChevronDown} />
+              Filter By{" "}
+              {toggler ? (
+                <FontAwesomeIcon icon={faChevronUp} />
+              ) : (
+                <FontAwesomeIcon icon={faChevronDown} />
+              )}
             </button>
             <ul
               className={
                 toggler
-                  ? "z-50 absolute top-full right-0 left-0 rounded-br-lg rounded-bl-lg text-center px-1 font-medium bg-slate-100"
+                  ? "z-50 absolute top-full right-0 left-0 rounded-br-lg rounded-bl-lg text-center px-1 font-medium bg-[#f5faff]"
                   : "hidden"
               }
             >
@@ -84,7 +89,7 @@ const AppliedJobs = () => {
                 <li
                   key={index}
                   onClick={() => handleOptionSelect(option.value)}
-                  className="py-2 rounded hover:bg-slate-200 my-1 cursor-pointer"
+                  className="py-2 rounded hover:bg-slate-200 my-1 font-semibold cursor-pointer"
                 >
                   {option.value}
                 </li>
