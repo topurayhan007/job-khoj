@@ -20,7 +20,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: categoriesAndJobsLoader,
+        /* loader: categoriesAndJobsLoader, */
       },
       {
         path: "statistics",

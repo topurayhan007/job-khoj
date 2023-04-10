@@ -1,15 +1,24 @@
 import React, { useEffect, useState } from "react";
 import Job from "../Job/Job";
 
-const JobsContainer = ({ jobs }) => {
+const JobsContainer = () => {
   // console.log(jobs);
+  const [jobs, setJobs] = useState([]);
+  useEffect(() => {
+    fetch("jobs.json")
+      .then((res) => res.json())
+      .then((data) => setJobs(data));
+  }, []);
+
   const [featureJobs, setFeatureJobs] = useState([]);
+  // console.log(featureJobs);
 
   useEffect(() => {
+    // setFeatureJobs(jobs);
     const lessJobs = jobs.slice(0, 4);
     // console.log(lessJobs);
     setFeatureJobs(lessJobs);
-  }, []);
+  }, [jobs]);
 
   const handleShowAll = () => {
     setFeatureJobs(jobs);
