@@ -1,11 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { toast } from "react-toastify";
 import ActiveLink from "../ActiveLink/ActiveLink";
 
 const Header = () => {
+  const location = useLocation();
+
   return (
-    <header className="bg-[#f9f9ff]">
+    <header
+      className={location.pathname === "/" ? "bg-[#f9f9ff]" : "bg-transparent"}
+    >
       <nav className="flex justify-between items-center w-10/12 mx-auto pt-10">
         <div>
           <h3 className="text-4xl text-[#1A1919] font-extrabold">
