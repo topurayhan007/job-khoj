@@ -89,7 +89,6 @@
       "email": "jobs@amazon.com"
     }
   },
-
   {
     "id": 6,
     "companyLogo": "assets/images/tesla-9.png",
@@ -106,6 +105,42 @@
     "contactInformation": {
       "phone": "+1 (555) 567-8901",
       "email": "jobs@tesla.com"
+    }
+  },
+  {
+    "id": 7,
+    "companyLogo": "assets/images/facebook.png",
+    "jobTitle": "Product Designer",
+    "companyName": "Facebook, Inc.",
+    "location": "Menlo Park, CA",
+    "remoteOrOnsite": "Onsite",
+    "fulltimeOrParttime": "Full-time",
+    "salary": "130K - 150K",
+    "jobDescription": "We're looking for a product designer to join our team and help us create innovative user experiences that will shape the future of social media. You'll be working on high-impact projects with a team of talented designers, engineers, and product managers.",
+    "jobResponsibility": "Design intuitive and engaging user interfaces for web and mobile applications. Collaborate with product managers and engineers to define user requirements and technical specifications. Conduct user research and gather feedback to inform design decisions. Develop and maintain a design system to ensure consistency and scalability across our applications.",
+    "educationalRequirements": "Bachelor's or Master's degree in Interaction Design, Graphic Design, Human-Computer Interaction, or a related field.",
+    "experiences": "5+ years of experience in product design for web and mobile applications.",
+    "contactInformation": {
+      "phone": "+1 (555) 123-4567",
+      "email": "jobs@facebook.com"
+    }
+  },
+  {
+    "id": 8,
+    "companyLogo": "assets/images/apple.png",
+    "jobTitle": "iOS Developer",
+    "companyName": "Apple Inc.",
+    "location": "Cupertino, CA",
+    "remoteOrOnsite": "Onsite",
+    "fulltimeOrParttime": "Full-time",
+    "salary": "140K - 170K",
+    "jobDescription": "We're looking for an experienced iOS developer to join our team and help us create world-class mobile applications that will delight our users. You'll be working with a talented and passionate group of developers to design and implement innovative features and solutions.",
+    "jobResponsibility": "Design, develop, and maintain high-quality iOS applications. Collaborate with cross-functional teams including product, design, and engineering to define requirements and specifications. Write clean, maintainable, and well-documented code. Ensure code quality through testing and code reviews. Continuously improve our software development processes and practices.",
+    "educationalRequirements": "Bachelor's or Master's degree in Computer Science, Software Engineering, or a related field.",
+    "experiences": "5+ years of experience in iOS development, with a proven track record of shipping successful applications.",
+    "contactInformation": {
+      "phone": "+1 (555) 234-5678",
+      "email": "jobs@apple.com"
     }
   }
 ]
