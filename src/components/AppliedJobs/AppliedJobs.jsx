@@ -4,13 +4,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { getAppliedJobs } from "../../utilities/fakedb";
 import jobsLoader from "../../utilities/jobsLoader";
+import AppliedJob from "../AppliedJob/AppliedJob";
 
 const AppliedJobs = () => {
-  const options = [{ value: "Remote" }, { value: "OnSite" }];
+  const options = [{ value: "Remote" }, { value: "Onsite" }];
 
   const [toggler, setToggler] = useState(false);
   const [jobs, setJobs] = useState([]);
   const [appliedJobs, setAppliedJobs] = useState([]);
+  const [filteredJobs, setFilteredJobs] = useState([]);
 
   useEffect(() => {
     fetch("/jobs.json")
@@ -32,9 +34,11 @@ const AppliedJobs = () => {
     }
 
     setAppliedJobs(savedJobs);
+    setFilteredJobs(savedJobs);
   }, [jobs]);
 
-  console.log(appliedJobs);
+  // console.log(appliedJobs);
+  console.log(filteredJobs);
 
   const handleDropdownToggle = () => {
     setToggler(!toggler);
@@ -42,8 +46,18 @@ const AppliedJobs = () => {
 
   const handleOptionSelect = (value) => {
     setToggler(false);
+
     console.log(value);
+
+    const filtered = appliedJobs.filter(
+      (appliedJob) => appliedJob.remoteOrOnsite === value
+    );
+    console.log(filtered);
+    setFilteredJobs(filtered);
   };
+
+  // console.log(appliedJobs);
+  // console.log(filteredJobs);
 
   return (
     <div className="mb-2">
@@ -78,7 +92,11 @@ const AppliedJobs = () => {
             </ul>
           </div>
         </div>
-        <div>Hello</div>
+        <div className="">
+          {filteredJobs.map((filteredJob) => (
+            <AppliedJob key={filteredJob.id} job={filteredJob}></AppliedJob>
+          ))}
+        </div>
       </div>
     </div>
   );
