@@ -38,7 +38,7 @@ const AppliedJobs = () => {
   }, [jobs]);
 
   // console.log(appliedJobs);
-  console.log(filteredJobs);
+  // console.log(filteredJobs);
 
   const handleDropdownToggle = () => {
     setToggler(!toggler);
@@ -52,7 +52,7 @@ const AppliedJobs = () => {
     const filtered = appliedJobs.filter(
       (appliedJob) => appliedJob.remoteOrOnsite === value
     );
-    console.log(filtered);
+    // console.log(filtered);
     setFilteredJobs(filtered);
   };
 
@@ -64,7 +64,7 @@ const AppliedJobs = () => {
       <div className="">
         <PageHeader>Applied Jobs</PageHeader>
       </div>
-      <div className="md:mt-[450px] w-10/12 mx-auto">
+      <div className="md:mt-[450px] mt-[200px] w-10/12 mx-auto">
         <div className="flex justify-end">
           <div className="flex flex-col justify-end relative w-32">
             <button
@@ -81,7 +81,7 @@ const AppliedJobs = () => {
             <ul
               className={
                 toggler
-                  ? "z-50 absolute top-full right-0 left-0 rounded-br-lg rounded-bl-lg text-center px-1 font-medium bg-[#f5faff]"
+                  ? "z-30 absolute top-full right-0 left-0 rounded-br-lg rounded-bl-lg text-center px-1 font-medium bg-[#f5faff]"
                   : "hidden"
               }
             >

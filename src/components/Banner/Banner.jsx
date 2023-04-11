@@ -5,7 +5,7 @@ const Banner = () => {
     <div className="bg-[#f9f9ff] pt-5">
       <div className="flex md:flex-row flex-col justify-between items-center md:gap-0 gap-3 w-10/12 lg:w-[1320px] mx-auto">
         <div className="text-left">
-          <h1 className="lg:text-7xl text-5xl font-extrabold leading-tight">
+          <h1 className="lg:text-7xl md:text-[43px] text-5xl  font-extrabold leading-tight">
             One Step <br /> Closer To Your <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7E90FE] to-[#9873FF]">
               Dream Job
