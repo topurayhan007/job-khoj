@@ -23,7 +23,7 @@ const AppliedJob = ({ job }) => {
   const { phone, email } = contactInformation;
 
   return (
-    <div className="border-[1.5px] border-[#E8E8E8] rounded-md md:pl-8 md:pr-10 md:px-0 pt-5 pb-7 md:py-8  my-8 flex md:flex-row flex-col items-center md:gap-8 gap-2">
+    <div className="border-[1.5px] border-[#E8E8E8] rounded-md md:pl-8 md:pr-10 md:px-0 pt-5 pb-7 md:py-8 my-8 flex md:flex-row flex-col  items-center md:gap-8 gap-2">
       <div className="bg-[#F4F4F4] lg:w-56 md:w-48 md:h-48 lg:h-56 h-44 md:my-8 md:mt-0 mt-5 md:mb-0 mb-3 p-8 rounded-lg flex justify-center items-center">
         <img src={companyLogo} className="lg:w-52 w-44" alt="" />
       </div>

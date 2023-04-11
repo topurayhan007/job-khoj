@@ -21,7 +21,7 @@ const ErrorPage = () => {
           >
             404
           </h1>
-          <h3 className="md:text-4xl text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-t from-slate-300 to-blue-50 leading-normal">
+          <h3 className="md:text-4xl py-2 text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-t from-slate-300 to-blue-50 leading-normal">
             Page not Found!
           </h3>
         </div>

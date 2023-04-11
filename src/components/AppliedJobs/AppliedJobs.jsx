@@ -97,10 +97,16 @@ const AppliedJobs = () => {
             </ul>
           </div>
         </div>
-        <div className="">
-          {filteredJobs.map((filteredJob) => (
-            <AppliedJob key={filteredJob.id} job={filteredJob}></AppliedJob>
-          ))}
+        <div className="lg:mt-20 mt-14">
+          {filteredJobs.length === 0 ? (
+            <h3 className="text-2xl font-extrabold text-[#7E90FE]">
+              You haven't applied for jobs yet!
+            </h3>
+          ) : (
+            filteredJobs.map((filteredJob) => (
+              <AppliedJob key={filteredJob.id} job={filteredJob}></AppliedJob>
+            ))
+          )}
         </div>
       </div>
     </div>

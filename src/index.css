@@ -7,6 +7,12 @@
 * {
   font-family: "Manrope", sans-serif;
 }
+
+@media screen and (max-width: 1024px) {
+  .recharts-responsive-container {
+    overflow: hidden;
+  }
+}
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

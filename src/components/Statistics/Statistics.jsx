@@ -25,7 +25,7 @@ const Statistics = () => {
       <div className="mb-2">
         <PageHeader>Statistics</PageHeader>
       </div>
-      <div className="mt-[450px] w-10/12 mx-auto">
+      <div className="md:mt-[450px] mt-[200px] md:w-10/12 lg:w-[1320px] mx-auto">
         <ResponsiveContainer width="100%" height={400}>
           <RadarChart cx="50%" cy="50%" outerRadius="90%" data={data}>
             <PolarGrid />

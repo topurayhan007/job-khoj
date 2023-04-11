@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { toast } from "react-toastify";
 import ActiveLink from "../ActiveLink/ActiveLink";
@@ -8,6 +8,20 @@ import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 const Header = () => {
   const location = useLocation();
   const [toggler, setToggler] = useState(false);
+
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth < 1024) {
+        setToggler(false);
+        // console.log(1, toggler);
+      }
+    }
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // console.log(toggler);
 
   const handleToggler = () => {
     setToggler(!toggler);
@@ -27,8 +41,8 @@ const Header = () => {
           </h3>
         </div>
         <div
-          className={`flex z-50 absolute top-full lg:mt-0 mt-4 right-0 left-0 lg:flex-row flex-col flex-1 py-8 lg:py-0 lg:pt-0 lg:bg-transparent bg-[#ebeeff] justify-center items-center lg:relative w-full ${
-            toggler ? "hidden lg:block" : "block"
+          className={`flex z-50 absolute top-full lg:mt-0 md:mt-3 right-0 left-0 lg:flex-row flex-col flex-1 py-8 lg:py-0 lg:pt-0 lg:bg-transparent bg-[#ebeeff] justify-center items-center lg:relative w-full ${
+            toggler ? "block" : "hidden lg:block"
           } `}
         >
           <div
@@ -42,7 +56,7 @@ const Header = () => {
           <div className="pt-8 lg:pt-0  lg:absolute lg:right-0">
             <button
               className={`text-base lg:hidden ${
-                toggler ? "hidden lg:block" : "block"
+                toggler ? "block" : "hidden lg:block"
               } text-white font-bold bg-gradient-to-r from-[#7E90FE] to-[#9873FF] rounded-lg px-6 py-3`}
             >
               Start Applying
@@ -56,12 +70,12 @@ const Header = () => {
         </div>
         <button
           onClick={handleToggler}
-          className="bg-[#ebeeff] rounded absolute right-0 mr-3 lg:hidden px-3 py-1 text-[#9d79ff] cursor-pointer"
+          className="bg-[#ebeeff] border border-[#9d79ff] rounded absolute right-0 mr-3 lg:hidden px-3 py-1 text-[#9d79ff] cursor-pointer"
         >
           {toggler ? (
-            <FontAwesomeIcon icon={faBars} className="fa-lg"></FontAwesomeIcon>
-          ) : (
             <FontAwesomeIcon icon={faXmark} className="fa-lg"></FontAwesomeIcon>
+          ) : (
+            <FontAwesomeIcon icon={faBars} className="fa-lg"></FontAwesomeIcon>
           )}
         </button>
       </nav>
