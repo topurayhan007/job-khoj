@@ -64,7 +64,7 @@ const AppliedJobs = () => {
       <div className="">
         <PageHeader>Applied Jobs</PageHeader>
       </div>
-      <div className="mt-[450px] w-10/12 mx-auto">
+      <div className="md:mt-[450px] w-10/12 mx-auto">
         <div className="flex justify-end">
           <div className="flex flex-col justify-end relative w-32">
             <button

@@ -36,7 +36,7 @@ const Job = ({ job }) => {
           {fulltimeOrParttime}
         </button>
       </div>
-      <div className="mt-4 mb-6 flex gap-5 items-center">
+      <div className="mt-4 mb-6 flex lg:flex-row flex-col gap-5 lg:items-center">
         <p className="text-base text-[#757575] font-medium">
           <FontAwesomeIcon icon={faLocationDot} className="pr-1" /> {location}
         </p>

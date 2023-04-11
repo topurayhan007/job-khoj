@@ -5,7 +5,10 @@ const Blog = () => {
   return (
     <div className="">
       <PageHeader>Blog</PageHeader>
-      <section className="mt-[450px] w-10/12 mx-auto" id="quesAnsContainer">
+      <section
+        className="md:mt-[450px] mt-[200px] md:w-10/12 lg:w-[1320px] mx-auto md:text-center text-left"
+        id="quesAnsContainer"
+      >
         <div className="mx-3 my-8 py-6 px-5 shadow-sm rounded-lg border">
           <div className="flex items-center">
             <div className="h-8 w-8 bg-purple-200 font-bold rounded-full flex justify-center items-center text-purple-800 mr-3">
@@ -17,7 +20,7 @@ const Blog = () => {
           </div>
           <hr className="my-3" />
           <div className="flex items-center">
-            <p className="mx-11 text-start leading-loose tracking-wide ">
+            <p className="mx-3 md:mx-11  text-start leading-loose tracking-wide ">
               <code className="bg-purple-50 p-1 rounded font-bold">
                 'Context API'
               </code>
@@ -46,7 +49,7 @@ const Blog = () => {
           </div>
           <hr className="my-3" />
           <div className="flex items-center">
-            <p className="mx-11 text-start leading-loose tracking-wide ">
+            <p className="mx-3 md:mx-11  text-start leading-loose tracking-wide ">
               <code className="bg-purple-50 p-1 rounded font-bold">
                 'Custom hook'
               </code>
@@ -88,7 +91,7 @@ const Blog = () => {
           </div>
           <hr className="my-3" />
           <div className="flex items-center">
-            <p className="mx-11 text-start leading-loose tracking-wide ">
+            <p className="mx-3 md:mx-11  text-start leading-loose tracking-wide ">
               <code className="bg-purple-50 p-1 rounded font-bold">
                 'useRef()'
               </code>{" "}
@@ -110,7 +113,7 @@ const Blog = () => {
           </div>
           <hr className="my-3" />
           <div className="flex items-center">
-            <p className="mx-11 text-start leading-loose tracking-wide ">
+            <p className="mx-3 md:mx-11  text-start leading-loose tracking-wide ">
               <code className="bg-purple-50 p-1 rounded font-bold">
                 'useMemo()'
               </code>{" "}

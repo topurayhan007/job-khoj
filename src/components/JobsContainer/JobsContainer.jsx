@@ -25,8 +25,8 @@ const JobsContainer = () => {
   };
 
   return (
-    <div className="w-10/12 mx-auto mb-14">
-      <div className="grid grid-cols-2 text-left gap-6">
+    <div className="md:w-10/12 lg:w-[1320px] px-5 mx-auto mb-14">
+      <div className="grid md:grid-cols-2 text-left gap-6">
         {featureJobs.map((job) => (
           <Job key={job.id} job={job}></Job>
         ))}

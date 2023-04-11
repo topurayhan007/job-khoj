@@ -28,9 +28,9 @@ const JobDetails = () => {
       <div className="">
         <PageHeader>Job Details</PageHeader>
       </div>
-      <div className="mt-[450px] w-10/12 mx-auto">
-        <div className="grid grid-cols-3 gap-6">
-          <div className="col-span-2 text-left text-[#757575] leading-loose text-base">
+      <div className="md:mt-[450px] mt-[200px] w-10/12 lg:w-[1320px] mx-auto">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6">
+          <div className="lg:col-span-2 text-left text-[#757575] leading-loose text-base">
             <p className="mb-6">
               <span className="font-extrabold text-[#1A1919]">
                 Job Description:{" "}

@@ -13,7 +13,7 @@ const ErrorPage = () => {
       <div className="backdrop-blur-sm bg-white/30 absolute h-screen top-0 left-0 right-0 text-center">
         <div className="flex flex-col justify-center items-center h-screen">
           <h1
-            className="text-[400px] font-extrabold leading-none bg-clip-text text-transparent bg-gradient-to-b from-slate-200"
+            className="md:text-[400px] text-[160px] font-extrabold leading-none bg-clip-text text-transparent bg-gradient-to-b from-slate-200"
             style={{
               "-webkit-text-stroke": "0.5px white",
               "-webkit-text-fill-color": "transparent",
@@ -21,7 +21,7 @@ const ErrorPage = () => {
           >
             404
           </h1>
-          <h3 className="text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-t from-slate-300 to-blue-50 leading-normal">
+          <h3 className="md:text-4xl text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-t from-slate-300 to-blue-50 leading-normal">
             Page not Found!
           </h3>
         </div>

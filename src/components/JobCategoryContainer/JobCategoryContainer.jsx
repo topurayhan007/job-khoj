@@ -8,12 +8,14 @@ const JobCategoryContainer = () => {
       .then((res) => res.json())
       .then((data) => setCategories(data));
   }, []);
-  
+
   return (
-    <div className="w-10/12 mx-auto flex justify-center items-center gap-6">
-      {categories.map((category) => (
-        <JobCategory key={category.id} category={category}></JobCategory>
-      ))}
+    <div className="md:w-10/12 lg:w-[1320px] px-5 mx-auto">
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-6">
+        {categories.map((category) => (
+          <JobCategory key={category.id} category={category}></JobCategory>
+        ))}
+      </div>
     </div>
   );
 };

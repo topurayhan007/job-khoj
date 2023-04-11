@@ -8,9 +8,9 @@ import {
 
 const Footer = () => {
   return (
-    <div className="mt-36 bg-black text-left">
-      <div className="w-10/12 mx-auto">
-        <div className="mb-12 pt-32 grid lg:grid-cols-5 gap-5">
+    <div className="md:mt-36 mt-20 bg-black text-left">
+      <div className="w-10/12 lg:w-[1320px] mx-auto">
+        <div className="mb-12 md:pt-32 pt-20 grid lg:grid-cols-5 md:grid-cols-2 gap-5">
           <div className="text-white text-base leading-9">
             <p className="text-2xl font-extrabold mb-7">JobKhoj</p>
             <p className="text-[#757575] leading-normal">
@@ -69,7 +69,7 @@ const Footer = () => {
           </div>
         </div>
         <hr className="border-[#757575]" />
-        <div className="flex justify-between items-center text-sm text-[#757575] mt-12 pb-24">
+        <div className="flex md:flex-row flex-col md:gap-0 gap-3 justify-between items-center text-sm text-[#757575] mt-12 pb-24">
           <p className="tracking-wider">
             @2023 <span className="font-extrabold">JobKhoj.</span> All Rights
             Reserved
