@@ -17,7 +17,7 @@ const Blog = () => {
           </div>
           <hr className="my-3" />
           <div className="flex items-center">
-            <p className="mx-11 text-start leading-loose">
+            <p className="mx-11 text-start leading-loose tracking-wide ">
               <code className="bg-purple-50 p-1 rounded font-bold">
                 'Context API'
               </code>
@@ -46,7 +46,7 @@ const Blog = () => {
           </div>
           <hr className="my-3" />
           <div className="flex items-center">
-            <p className="mx-11 text-start leading-loose">
+            <p className="mx-11 text-start leading-loose tracking-wide ">
               <code className="bg-purple-50 p-1 rounded font-bold">
                 'Custom hook'
               </code>
@@ -88,17 +88,13 @@ const Blog = () => {
           </div>
           <hr className="my-3" />
           <div className="flex items-center">
-            <p className="mx-11 text-start leading-loose">
+            <p className="mx-11 text-start leading-loose tracking-wide ">
               <code className="bg-purple-50 p-1 rounded font-bold">
-                'useEffect()'
+                'useRef()'
               </code>{" "}
-              is a side effect of react which is used to reach outside of the
-              react components in order to do something, like fetching an API
-              data. It is also a hook of react which accepts a function and a
-              dependency. This hook runs on every render unless you pass a
-              dependency value and it will render whenever the dependency value
-              changes. So, it can be used on timers, validating inputs, trigger
-              animation, trigger any change in the DOM.
+              is a hook of react and it lets you create a reference of things
+              that are mutual or subject to change but the change or update
+              would not cause and re-render.
             </p>
           </div>
         </div>
@@ -109,22 +105,19 @@ const Blog = () => {
               4
             </div>
             <p className="text-gray-800 text-lg font-bold">
-              What is <code>'useMemo'</code>?
+              What is <code>'useMemo()'</code>?
             </p>
           </div>
           <hr className="my-3" />
           <div className="flex items-center">
-            <p className="mx-11 text-start leading-loose">
+            <p className="mx-11 text-start leading-loose tracking-wide ">
               <code className="bg-purple-50 p-1 rounded font-bold">
-                'React'
+                'useMemo()'
               </code>{" "}
-              uses components like functions. React takes all the elements and
-              creates a JavaScript representation of the entire DOM know as
-              vitual DOM and assigns unique key to each element to keep track,
-              whenever there's any change React uses "diffing" algorithm to
-              pinpoint which element has undergo change by matching the vitual
-              DOM with the actual DOM using the keys and updates that element
-              only and re-renders it without re-rendering the whole DOM.
+              is used to memoize value between re-renders. This allows us to
+              cache a value which are being used inside a component but does not
+              require the value to be re-called or re-generate on every
+              re-render. It only re-renders when the value is updated.
             </p>
           </div>
         </div>
