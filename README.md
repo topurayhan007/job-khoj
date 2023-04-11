@@ -25,8 +25,13 @@
 * Responsive in desktop and mobile devices.
 
 ![Page Screenshot1](./public/screenshots/JobKhoj.png)
+
 ![Page Screenshot2](./public/screenshots/JobKhoj-1.png)
+
 ![Page Screenshot3](./public/screenshots/JobKhoj-2.png)
+
 ![Page Screenshot4](./public/screenshots/JobKhoj-3.png)
+
 ![Page Screenshot5](./public/screenshots/JobKhoj-4.png)
+
 ![Page Screenshot6](./public/screenshots/JobKhoj-5.png)
