@@ -1,5 +1,10 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faTwitter,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -7,28 +12,31 @@ const Footer = () => {
       <div className="w-10/12 mx-auto">
         <div className="mb-12 pt-32 grid lg:grid-cols-5 gap-5">
           <div className="text-white text-base leading-9">
-            <p className="text-2xl font-bold mb-7">JobKhoj</p>
+            <p className="text-2xl font-extrabold mb-7">JobKhoj</p>
             <p className="text-[#757575] leading-normal">
               There are many variations of passages of Lorem Ipsum, but the
               majority have suffered alteration in some form.
             </p>
-            <div>
-              <div className="bg-white rounded-full">
+            <div className="flex justify-start items-center mt-5 gap-3">
+              <div className="bg-white rounded-full w-10 h-10 flex justify-center items-center">
                 <FontAwesomeIcon
-                  icon="fa-brands fa-instagram"
+                  className="fa-lg"
+                  icon={faFacebookF}
                   style={{ color: "#337fff" }}
                 />
               </div>
-              <div className="bg-white rounded-full">
+              <div className="bg-white rounded-full w-10 h-10 flex justify-center items-center">
                 <FontAwesomeIcon
-                  icon="fa-brands fa-twitter"
+                  className="fa-lg"
+                  icon={faTwitter}
                   style={{ color: "#33ccff" }}
                 />
               </div>
-              <div className="bg-white rounded-full">
+              <div className="bg-white rounded-full w-10 h-10 flex justify-center items-center">
                 <FontAwesomeIcon
-                  icon="fa-brands fa-instagram"
-                  style={{ color: "#e74582" }}
+                  className="fa-lg text-transparent bg-clip-text bg-gradient-to-tr from-[#f2cf74] via-[#d83c84] to-[#6949e2]"
+                  icon={faInstagram}
+                  style={{ color: "#d83c84" }}
                 />
               </div>
             </div>
@@ -62,12 +70,12 @@ const Footer = () => {
         </div>
         <hr className="border-[#757575]" />
         <div className="flex justify-between items-center text-sm text-[#757575] mt-12 pb-24">
-          <p>
-            @2023 <span className="font-bold">JobKhoj.</span> All Rights
+          <p className="tracking-wider">
+            @2023 <span className="font-extrabold">JobKhoj.</span> All Rights
             Reserved
           </p>
-          <p>
-            Powered by <span className="font-bold">JobKhoj</span>
+          <p className="tracking-wider">
+            Powered by <span className="font-extrabold">JobKhoj</span>
           </p>
         </div>
       </div>
